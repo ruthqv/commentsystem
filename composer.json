@@ -1,0 +1,30 @@
+{
+    "name": "comments/commentssystem",
+    "description": "comments system",
+    "type": "package",
+    "version": "1.0.0",
+    "license": "MIT",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "comments\\commentssystem\\CommentsSystemServiceProvider"
+            ],
+            "aliases": {
+            "comments": "comments\\commentssystem\\Facade"
+             }
+          }
+    },
+    "authors": [{
+        "name": "ruthqv",
+        "email": "rqvaquero@gmail.com"
+    }],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.6.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "comments\\commentssystem\\": "src/"
+        }
+    }
+}
